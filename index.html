@@ -13,29 +13,31 @@
         rel="stylesheet">
 </head>
 
-<body style="width: 1440px; border: 1px solid black;">
+<body style="margin: 0;">
 
+    <div>
+        <nav class="navbar">
+            <div class="logo">Jad<span class="logo-span">oo</span></div>
+            <ul class="navbar-links">
+                <li>Destinations</li>
+                <li>Hotels</li>
+                <li>Flights</li>
+                <li>Bookings</li>
+                <li>Login</li>
+                <li class="sign-up">Sign up</li>
+                <li>EN v</li>
+            </ul>
+            <div><button>Click me</button></div>
+        </nav>
+    </div>
     <!-- HERO -->
-    <section style="padding: 0px 150px; overflow: hidden !important;">
+    <section style="padding: 0px 150px; margin-top: 20px;">
         <div>
             <img src="bg-image.png" alt=""
-                style="position: absolute; z-index: -1; width: 766px;height: 873px; right: 0; margin-top: -150px; margin-right: -150px;"
+                style="position: absolute; z-index: -1; width: 766px;height: 873px; right: 0; margin-top: -150px;"
                 id="bg-image">
         </div>
-        <div>
-            <nav class="navbar">
-                <div class="logo">Jad<span class="logo-span">oo</span></div>
-                <ul class="navbar-links">
-                    <li>Destinations</li>
-                    <li>Hotels</li>
-                    <li>Flights</li>
-                    <li>Bookings</li>
-                    <li>Login</li>
-                    <li class="sign-up">Sign up</li>
-                    <li>EN v</li>
-                </ul>
-            </nav>
-        </div>
+
         <div class="hero-main">
             <div class="hero-left">
                 <p class="hero-info">BEST DESTINATIONS AROUND THE WORLD</p>
@@ -53,13 +55,14 @@
                     </div>
                 </div>
             </div>
-            <img src="hero.png" alt="" style="margin-left: -100px;">
+            <img src="hero.png" alt="" style="margin-left: -100px;" id="hero-img">
         </div>
     </section>
 
     <!-- SERVICES -->
     <section style="padding: 0px 150px; margin-top: 100px;">
-        <div style="display: flex; flex-direction: column; text-align: center;">
+        <div
+            style="display: flex; flex-direction: column; text-align: center; justify-content: center; align-items: center;">
             <div>
                 <p class="mini-text">CATEGORY</p>
                 <h2>We Offer Best Services</h2>
@@ -310,9 +313,9 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div id="book-right">
                 <div
-                    style="padding: 30px; border-radius: 26px; position: relative; box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.089);">
+                    style="padding: 30px; border-radius: 26px; position: relative; box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.089); border: 2px solid green;">
                     <div>
                         <img src="book-img.jpg" alt="" style="border-radius: 24px;">
                     </div>
@@ -433,12 +436,15 @@
             </div>
             <div>CONTAINER FOR SOMETHING</div>
         </div>
+    </section>
+
+    <section>
         <div class="testimonial-grid">
-            <div><img src="test1.png" alt="" class="test-img"></div>
-            <div><img src="test2.png" alt="" class="test-img"></div>
-            <div><img src="test3.png" alt="" class="test-img"></div>
-            <div><img src="test4.png" alt="" class="test-img  test-img-4"></div>
-            <div><img src="test5.png" alt="" class="test-img-4 test-img"></div>
+            <div id="test1"><img src="test1.png" alt="" class="test-img"></div>
+            <div id="test2"><img src="test2.png" alt="" class="test-img"></div>
+            <div id="test3"><img src="test3.png" alt="" class="test-img"></div>
+            <div id="test4"><img src="test4.png" alt="" class="test-img  test-img-4"></div>
+            <div id="test5"><img src="test5.png" alt="" class="test-img-4 test-img"></div>
         </div>
     </section>
 
@@ -450,7 +456,7 @@
                 information, latest news
                 and other <br>
                 interesting offers about Jadoo</h3>
-            <div style="margin-top: 100px;">
+            <div style="margin-top: 100px; display: flex; flex-wrap: wrap; justify-content: center;">
                 <input type="email" id=""
                     style="width: 421px; height: 68px; border: 1px solid rgba(0, 0, 0, 0.026); border-radius: 10px;">
                 <button
