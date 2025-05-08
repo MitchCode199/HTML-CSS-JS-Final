@@ -13,13 +13,14 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body style="width: 1440px; border: 1px solid black;">
 
     <!-- HERO -->
-    <section style="padding: 0px 100px;">
+    <section style="padding: 0px 150px; overflow: hidden !important;">
         <div>
             <img src="bg-image.png" alt=""
-                style="position: absolute; z-index: -1; width: 766px;height: 873px; right: 0; margin-top: -150px; margin-right: -150px;">
+                style="position: absolute; z-index: -1; width: 766px;height: 873px; right: 0; margin-top: -150px; margin-right: -150px;"
+                id="bg-image">
         </div>
         <div>
             <nav class="navbar">
@@ -57,7 +58,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section style="padding: 0px 100px; margin-top: 100px;">
+    <section style="padding: 0px 150px; margin-top: 100px;">
         <div style="display: flex; flex-direction: column; text-align: center;">
             <div>
                 <p class="mini-text">CATEGORY</p>
@@ -277,8 +278,8 @@
     </section> -->
 
     <!-- BOOKINGS -->
-    <section style="padding: 0px 100px; margin-top: 150px;">
-        <div style="display: flex; justify-content: space-evenly; align-items: center;gap: 200px;">
+    <section style="padding: 0px 150px; margin-top: 150px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;gap: 200px;">
             <div>
                 <p class="mini-text">Easy and Fast</p>
                 <h2>Book Your Next Trip <br>In 3 Easy Steps</h2>
@@ -320,7 +321,8 @@
                         <p style="color: #84829A; letter-spacing: 1.5%; font-size: 16px;">14-29 June |</p>
                         <p style="color: #84829A; letter-spacing: 1.5%; font-size: 16px;">by Robbin joseph</p>
                     </div>
-                    <div><svg width="139" height="36" viewBox="0 0 139 36" fill="none"
+                    <div style="margin-top: 5px;">
+                        <svg width="139" height="36" viewBox="0 0 139 36" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="18" cy="18" r="18" fill="#F5F5F5" />
                             <g clip-path="url(#clip0_1_196)">
@@ -416,24 +418,45 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section>
-        <div style="display:flex ;">
+    <section style="padding: 0px 150px; margin-top: 150px;">
+        <div style="display:flex; justify-content: space-between; align-items: center;gap: 200px;">
             <div>
-                <p>TESTIMONIALS</p>
-                <h2>What People Say About Us</h2>
-                <div>ICONS</div>
+                <p class="mini-text">TESTIMONIALS</p>
+                <h2>What People Say <br>About Us.</h2>
+                <div style="margin-top: 60px;">
+                    <svg width="87" height="12" viewBox="0 0 87 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#39425D" />
+                        <circle cx="44" cy="6" r="6" fill="#E5E5E5" />
+                        <circle cx="81" cy="6" r="6" fill="#E5E5E5" />
+                    </svg>
+                </div>
             </div>
             <div>CONTAINER FOR SOMETHING</div>
         </div>
+        <div class="testimonial-grid">
+            <div><img src="test1.png" alt="" class="test-img"></div>
+            <div><img src="test2.png" alt="" class="test-img"></div>
+            <div><img src="test3.png" alt="" class="test-img"></div>
+            <div><img src="test4.png" alt="" class="test-img  test-img-4"></div>
+            <div><img src="test5.png" alt="" class="test-img-4 test-img"></div>
+        </div>
     </section>
 
-    <!-- AFFILIATES -->
-    <section>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
+    <!-- SUBSCRIBE -->
+    <section style="padding: 0px 150px; margin-top: 150px;">
+        <div
+            style="text-align: center;padding: 50px; border-top-left-radius: 130px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; background-color: #DFD7F9;">
+            <h3 style="font-weight: 600; font-size: 33px;line-height: 54px; color: #5E6282;">Subscribe to get
+                information, latest news
+                and other <br>
+                interesting offers about Jadoo</h3>
+            <div style="margin-top: 100px;">
+                <input type="email" id=""
+                    style="width: 421px; height: 68px; border: 1px solid rgba(0, 0, 0, 0.026); border-radius: 10px;">
+                <button
+                    style="width: 180px; height: 68px; border-radius: 10px; background: linear-gradient(to bottom, #FF946D, #FF7D68); border: none; color: white; margin-left: 20px;">Subscribe</button>
+            </div>
+        </div>
     </section>
 </body>
 
