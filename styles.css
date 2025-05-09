@@ -97,17 +97,16 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: clamp(20px, 8vw, 50px);
     font-weight: 700;
     font-family: "Volkhov", sans-serif;
-    margin-top: -5px;
 }
 
 h4 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     line-height: 100%;
-    font-size: 20px;
+    font-size: clamp(8px, 3vw, 20px);
     color: #1E1D4C;
 }
 
@@ -125,13 +124,13 @@ h4 {
 }
 
 .card-1 {
-    width: 190px;
+    width: 250px;
     padding: 30px;
 }
 
 .card-2 {
     border: 0px 1px 1px 1px solid rgba(0, 0, 0, 0.055);
-    width: 190px;
+    width: 230px;
     padding: 30px 50px;
     height: auto;
     border-radius: 36px;
@@ -317,13 +316,24 @@ h4 {
 
     .service-cards {
         grid-template-columns: 1, auto;
-        grid-template-rows: 4;
+        grid-template-rows: 4, auto;
         grid-template-areas:
             '.'
             '.'
             '.'
             '.'
         ;
+        justify-items: center;
+        align-content: center;
+        gap: 20px;
+    }
+
+    #category {
+        margin-top: 100px;
+    }
+
+    .card-svg {
+        display: none;
     }
 }
 
