@@ -8,8 +8,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
     margin-top: 0;
+    border: 2px solid red;
+    padding: 20px 20px;
+    width: 100%;
 }
 
 .navbar-links {
@@ -17,6 +19,8 @@
     gap: 50px;
     list-style: none;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 ul li {
@@ -88,6 +92,43 @@ h1 {
     box-shadow: 0px 10px 20px #f1a50136;
 }
 
+.destination-card {
+    width: 315px;
+    height: 457px;
+    border-radius: 24px;
+    object-fit: cover;
+    position: relative;
+}
+
+.destination-content {
+    background-color: gray;
+    position: absolute;
+    top: 330px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+/* .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+        'dest1 dest2 dest3'
+    ;
+    border: 3px solid green;
+    justify-content: space-around;
+    gap: 30px;
+} */
+
+.destination-grid {
+    display: flex;
+    border: 3px solid green;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
 
 .mini-text {
     font-size: 18px;
@@ -285,6 +326,11 @@ h4 {
     }
 }
  */
+@media (width > 1280px) {
+    .menu {
+        display: none;
+    }
+}
 
 @media (width < 1281px) {
     .hero-main {
@@ -354,7 +400,22 @@ h4 {
         height: 60px;
     }
 
+    .navbar {
+        padding: 20px 20px;
+    }
 
+    .navbar-links {
+        display: none;
+    }
+
+    /* .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            'dest1 dest2'
+            '. dest3 .'
+        ;
+    } */
 }
 
 @media (width < 541px) {
@@ -413,6 +474,24 @@ h4 {
         filter: brightness(0) invert(1);
         width: 100px;
         height: auto;
+    }
+
+    .destination-card {
+        width: 305px;
+        height: 407px;
+        border-radius: 24px;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .destination-content {
+        background-color: gray;
+        position: absolute;
+        top: 291px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+        width: 100%;
+        padding: 10px 0px;
     }
 }
 
