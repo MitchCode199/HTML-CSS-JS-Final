@@ -102,33 +102,26 @@ h1 {
     transition: 0.5s ease-in-out;
 }
 
-.destination-card:hover {
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-    transform: scale(1.1);
-    font-weight: 900;
-}
-
-.destination-content {
-    background-color: white;
-    position: absolute;
-    top: 70%;
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
-    width: 100.1%;
-    margin: 15px 0px;
-
-}
-
 .destination-grid {
     display: flex;
     border: 3px solid green;
+    margin-bottom: 100px;
     justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
 }
 
+.destination-content {
+    background-color: white;
+    position: absolute;
+    top: 78%;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    width: 99.9%;
+}
+
 .destination-textbox {
-    margin: 20px;
+    margin: 10px 25px 25px 40px;
 }
 
 .mini-text {
@@ -142,6 +135,8 @@ h2 {
     font-size: clamp(20px, 8vw, 50px);
     font-weight: 700;
     font-family: "Volkhov", sans-serif;
+    color: #14183E;
+    margin-top: 0px;
 }
 
 h4 {
@@ -331,6 +326,12 @@ h4 {
     .menu {
         display: none;
     }
+
+    .destination-card:hover {
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+        transform: scale(1.1);
+        font-weight: 900;
+    }
 }
 
 @media (width < 1281px) {
@@ -478,8 +479,8 @@ h4 {
     }
 
     .destination-card {
-        width: 305px;
-        height: 407px;
+        width: 285px;
+        height: 357px;
         border-radius: 24px;
         object-fit: cover;
         display: flex;
@@ -490,7 +491,11 @@ h4 {
         border-bottom-left-radius: 24px;
         border-bottom-right-radius: 24px;
         width: 100%;
-        margin: 10px 0px;
+        top: 77%;
+    }
+
+    .destination-textbox {
+        margin: 0px 10px;
     }
 }
 
