@@ -284,6 +284,7 @@ h4 {
     }
 }
  */
+
 @media (width < 1025px) {
     .hero-main {
         flex-direction: column;
@@ -319,8 +320,8 @@ h4 {
 
     .book-left-content {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-items: center;
+        align-content: center;
         gap: 0px;
         margin-top: 26px;
     }
