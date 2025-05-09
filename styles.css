@@ -98,29 +98,26 @@ h1 {
     border-radius: 24px;
     object-fit: cover;
     position: relative;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.063);
+    transition: 0.5s ease-in-out;
+}
+
+.destination-card:hover {
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    font-weight: 900;
 }
 
 .destination-content {
-    background-color: gray;
+    background-color: white;
     position: absolute;
-    top: 330px;
+    top: 70%;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
-    width: 100%;
-    padding: 15px 0px;
-}
+    width: 100.1%;
+    margin: 15px 0px;
 
-/* .destination-grid {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas:
-        'dest1 dest2 dest3'
-    ;
-    border: 3px solid green;
-    justify-content: space-around;
-    gap: 30px;
-} */
+}
 
 .destination-grid {
     display: flex;
@@ -128,6 +125,10 @@ h1 {
     justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
+}
+
+.destination-textbox {
+    margin: 20px;
 }
 
 .mini-text {
@@ -481,20 +482,26 @@ h4 {
         height: 407px;
         border-radius: 24px;
         object-fit: cover;
-        position: relative;
+        display: flex;
+        justify-content: center;
     }
 
     .destination-content {
-        background-color: gray;
-        position: absolute;
-        top: 291px;
         border-bottom-left-radius: 24px;
         border-bottom-right-radius: 24px;
         width: 100%;
-        padding: 10px 0px;
+        margin: 10px 0px;
     }
 }
 
+
+/* background-color: gray;
+    position: absolute;
+    top: 304px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    width: 100%;
+    margin: 15px 0px; */
 /* @media (width > 1024px) {
     #hero-right {
         display: block;
