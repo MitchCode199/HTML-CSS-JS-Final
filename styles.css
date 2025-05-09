@@ -177,8 +177,6 @@ h4 {
     grid-template-areas:
         'test1 test2 test3 test4 test5'
     ;
-    border: 3px dashed red;
-    justify-items: center;
 }
 
 .test-img {
