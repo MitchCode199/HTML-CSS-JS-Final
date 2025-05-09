@@ -407,6 +407,11 @@ h4 {
             'test5 test5'
         ;
     }
+
+    .test-img {
+        width: 100px;
+        height: auto;
+    }
 }
 
 /* @media (width > 1024px) {
