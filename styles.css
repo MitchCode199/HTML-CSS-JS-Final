@@ -172,27 +172,25 @@ h4 {
 
 .testimonial-grid {
     display: grid;
-    grid-template-columns: 4, auto;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1, 1fr;
     grid-template-areas:
-        'div div div div div'
+        'test1 test2 test3 test4 test5'
     ;
+    border: 3px dashed red;
     justify-items: center;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 200px;
 }
 
 .test-img {
-    width: auto;
+    width: 165px;
     height: 130px;
     filter: grayscale(100%);
     object-fit: contain;
 }
 
 .test-img-4 {
-    width: 162px;
-    height: 32px;
+    width: 165px;
+    height: 130px;
     object-fit: contain;
 }
 
@@ -285,7 +283,7 @@ h4 {
 }
  */
 
-@media (width < 1025px) {
+@media (width < 1281px) {
     .hero-main {
         flex-direction: column;
         justify-content: center;
@@ -320,19 +318,43 @@ h4 {
 
     .book-left-content {
         flex-direction: column;
-        justify-items: center;
-        align-content: center;
+        justify-content: space-between;
+        align-items: center;
         gap: 0px;
         margin-top: 26px;
     }
 
     #book-left-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            'one two'
+            'three three'
+        ;
+        gap: 30px;
+        justify-items: center;
+        align-content: center;
         margin-top: 50px;
     }
 
+    .book-left-header {
+        font-size: 30px;
+    }
+
+    .book-left-text {
+        font-size: clamp(14px, 2vw, 28px);
+    }
+
+    .book-img-size {
+        width: 60px;
+        height: 60px;
+    }
+
+
 }
 
-@media (width < 426px) {
+@media (width < 541px) {
     #hero-right {
         display: none;
     }
@@ -357,6 +379,30 @@ h4 {
 
     .card-svg {
         display: none;
+    }
+
+    #book-left-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            'one'
+            'two'
+            'three'
+        ;
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            'test1 test2'
+            'test3 test4'
+            'test5 test5'
+        ;
     }
 }
 
