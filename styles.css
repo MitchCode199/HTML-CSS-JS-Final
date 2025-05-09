@@ -170,12 +170,12 @@ h4 {
     margin-top: -15px;
 }
 
-.testimonial-grid {
+.sponsor-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1, 1fr;
     grid-template-areas:
-        'test1 test2 test3 test4 test5'
+        'sponsor1 sponsor2 sponsor3 sponsor4 sponsor5'
     ;
     justify-items: center;
     align-items: center;
@@ -184,14 +184,14 @@ h4 {
     margin-top: 50px;
 }
 
-.test-img {
+.sponsor-img {
     width: auto;
     height: 130px;
     filter: grayscale(100%);
     object-fit: contain;
 }
 
-.test-img-4 {
+.sponsor-img-4 {
     width: 162px;
     height: 32px;
     object-fit: contain;
@@ -398,18 +398,18 @@ h4 {
         gap: 10px;
     }
 
-    .testimonial-grid {
+    .sponsor-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-            'test1 test2'
-            'test3 test4'
-            'test5 test5'
+            'sponsor1 sponsor2'
+            'sponsor3 sponsor4'
+            'sponsor5 sponsor5'
         ;
         background-color: #1e1d4ce7;
     }
 
-    .test-img {
+    .sponsor-img {
         filter: brightness(0) invert(1);
         width: 100px;
         height: auto;
