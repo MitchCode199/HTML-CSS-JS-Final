@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -21,10 +21,20 @@
                 style="position: absolute; z-index: -1; width: 766px;height: 873px; right: 0; margin-top: -150px;"
                 id="bg-image">
         </div> -->
-        <div style="border: 3px solid blue; width: 100%;">
-            <nav style="display: flex; justify-content: space-between; border: 3px solid red; align-items: center;">
+        <div style="width: 100%;">
+            <nav style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
                 <div class="logo">Jad<span class="logo-span">oo</span></div>
-                <div><button>MENU</button></div>
+                <div>
+                    <button class="hamMenu">MENU</button>
+                    <ul class="hamMenuDrop">
+                        <li><a href="#Destinations">Destinations</a></li>
+                        <li><a href="#hotels">Hotels</a></li>
+                        <li><a href="#flights">Flights</a></li>
+                        <li><a href="#Bookings">Bookings</a></li>
+                        <li><a href="#login">Login</a></li>
+                        <li><a href="#signup">Sign Up</a></li>
+                    </ul>
+                </div>
                 <ul class="navbar-links">
                     <li>Destinations</li>
                     <li>Hotels</li>
@@ -36,6 +46,8 @@
                 </ul>
 
             </nav>
+
+
         </div>
 
         <!-- HERO -->
@@ -62,7 +74,7 @@
         </div>
 
         <!--CATEGORY-->
-        <!-- <div style="display: flex; flex-direction: column; text-align: center; justify-content: center; align-items: center; margin-top: 50px;"
+        <div style="display: flex; flex-direction: column; text-align: center; justify-content: center; align-items: center; margin-top: 50px;"
             id="category">
             <div>
                 <p class="mini-text">CATEGORY</p>
@@ -257,10 +269,10 @@
                         military customers</p>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- BOOKINGS -->
-        <!-- <div style="display: flex; align-items: center; justify-content: space-evenly; margin-top: 50px; width: 100%;"
+        <div style="display: flex; align-items: center; justify-content: space-evenly; margin-top: 50px; width: 100%;"
             id="Bookings">
             <div id="book-left">
                 <p class="mini-text">Easy and Fast</p>
@@ -294,7 +306,7 @@
             </div>
             <div id="book-right">
                 <div
-                    style="padding: 30px; border-radius: 26px; position: relative; box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.089); border: 2px solid green;">
+                    style="padding: 30px; border-radius: 26px; position: relative; box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.089);">
                     <div>
                         <img src="book-img.jpg" alt="" style="border-radius: 24px;">
                     </div>
@@ -396,10 +408,10 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- DESTINATIONS -->
-        <div style="width: 100%;">
+        <div style="width: 100%; margin-top: 50px;" id="Destinations">
             <div style="text-align: center;">
                 <p class="mini-text">Top Selling</p>
                 <h2>Top Destinations</h2>
@@ -442,17 +454,79 @@
             </div>
         </div>
 
+        <!-- TESTIMONIALS -->
+        <section style="margin-top: 50px; width: 100%;">
+            <div style="display:flex; justify-content: space-evenly; align-items: center; gap: 50px;"
+                class="testimonials">
+                <div>
+                    <p class="mini-text">TESTIMONIALS</p>
+                    <h2>What People Say <br>About Us.</h2>
+                    <div style="margin-top: 60px;">
+                        <svg width="87" height="12" viewBox="0 0 87 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="6" fill="#39425D" />
+                            <circle cx="44" cy="6" r="6" fill="#E5E5E5" />
+                            <circle cx="81" cy="6" r="6" fill="#E5E5E5" />
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: flex; justify-content: center;">
+                        <div><img src="pfp.png" alt="" class="testimg">
+                        </div>
+                        <div class="sub-container">
+                            <p class="mini-text">“On the Windows talking painted pasture yet its express parties use.
+                                Sure last upon he
+                                same
+                                as knew next. Of believed or diverted no.”</p>
+                            <div class="mini-text">
+                                <p>Mike taylor</p>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+                        <!-- <div>
+                            <p>Chris Thomas</p>
+                            <p>CEO of Red Button</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- SPONSORS -->
-        <!-- <div class=" sponsor-grid">
-                        <div style="grid-area: sponsor1;"><img src="sponsor1.png" alt="" class="sponsor-img"></div>
-                        <div style="grid-area: sponsor2;"><img src="sponsor2.png" alt="" class="sponsor-img"></div>
-                        <div style="grid-area: sponsor3;"><img src="sponsor3.png" alt="" class="sponsor-img"></div>
-                        <div style="grid-area: sponsor4;"><img src="sponsor4.png" alt=""
-                                class="sponsor-img  sponsor-img-4"></div>
-                        <div style="grid-area: sponsor5;"><img src="sponsor5.png" alt=""
-                                class="sponsor-img-4 sponsor-img"></div>
-                    </div> -->
+        <div class=" sponsor-grid">
+            <div style="grid-area: sponsor1;"><img src="sponsor1.png" alt="" class="sponsor-img"></div>
+            <div style="grid-area: sponsor2;"><img src="sponsor2.png" alt="" class="sponsor-img"></div>
+            <div style="grid-area: sponsor3;"><img src="sponsor3.png" alt="" class="sponsor-img"></div>
+            <div style="grid-area: sponsor4;"><img src="sponsor4.png" alt="" class="sponsor-img  sponsor-img-4"></div>
+            <div style="grid-area: sponsor5;"><img src="sponsor5.png" alt="" class="sponsor-img-4 sponsor-img"></div>
+        </div>
+
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('.hamMenu');
+            const dropdown = document.querySelector('.hamMenuDrop');
+
+            button.addEventListener('click', function () {
+                // Toggle visibility
+                if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                    dropdown.style.display = 'block';
+                } else {
+                    dropdown.style.display = 'none';
+                }
+            });
+
+            // Optional: Close menu when clicking outside
+            document.addEventListener('click', function (e) {
+                if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+                    dropdown.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+
+
 
     <!-- SERVICES -->
 
@@ -460,23 +534,7 @@
 
 
 
-    <!-- TESTIMONIALS -->
-    <!-- <section style="padding: 0px 150px; margin-top: 150px;">
-        <div style="display:flex; justify-content: space-between; align-items: center;gap: 200px; flex-wrap: wrap;">
-            <div>
-                <p class="mini-text">TESTIMONIALS</p>
-                <h2>What People Say <br>About Us.</h2>
-                <div style="margin-top: 60px;">
-                    <svg width="87" height="12" viewBox="0 0 87 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="6" fill="#39425D" />
-                        <circle cx="44" cy="6" r="6" fill="#E5E5E5" />
-                        <circle cx="81" cy="6" r="6" fill="#E5E5E5" />
-                    </svg>
-                </div>
-            </div>
-            <div>CONTAINER FOR SOMETHING</div>
-        </div>
-    </section> -->
+
 
     <!-- <section style="display: flex; justify-content: center; align-items: center;" id="sponsors">
         
